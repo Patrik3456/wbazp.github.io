@@ -15,6 +15,9 @@ body{
     font-weight: 400;
     font-style: normal;
 }
+li {
+    list-style-type: none;
+}
 .site-header{
     color: #263238;
     border-bottom: 1px solid #E7EBED;
