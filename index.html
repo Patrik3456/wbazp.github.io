@@ -10,53 +10,54 @@
     <link rel="stylesheet" href="CSS/Responsive.css">
 </head>
 <body>
-<header>
-    <div id="nav-bar">                          
-        <div class="nav-bar-menu">
-            <a href="index.html" class="logo">
-                <img src="Pictures/Logo.jpg" alt="logo" width="225" height="78">
-            </a>        
+<header class="site-header">
+    <div class="nav-bar">                          
+        <p class="logo-area">
+            <a href="index.html">
+                <img src="Pictures/Logoo.png" alt="logo" width="264" height="90">
+            </a>   
+        </p>
+        <div class="nav-bar-menu">     
             <ul class="menu">
-                <li>
+                <li class="menu-item">
                     <a href="HTML/Download.html" id="download-button">
                         <span>
                             Download
                         </span>
                     </a>
                 </li>   
-                <li>
+                <li class="menu-item">
                     <a href="HTML/About_us.html">
                         <span>
                             O nás
                         </span>
                     </a>
                 </li>
-                <li>
+                <li class="menu-item">
                     <a href="HTML/About_app.html">
                         <span>
                             O aplikaci
                         </span>
                     </a>
                 </li>
-                <li>
+                <li class="menu-item">
                     <a href="HTML/Contact.html">
                         <span>
                             Kontakty
                         </span>
                     </a>
-                </li>           
-            </ul>
-            <div id="loginStatus">
-                <a href="HTML/Log_in.html"  id="button" onclick="toggleLogin()">
-                    <span>
-                        Přihlásit se
-                    </span>
-                </a>
-            </div>        
+                </li>                       
+                <li id="loginStatus" class="menu-item">
+                    <a href="HTML/Log_in.html"  id="button" onclick="toggleLogin()">
+                        <span>
+                            Přihlásit se
+                        </span>
+                    </a>
+                </li>  
+            </ul>      
         </div>           
     </div>
 </header>
-
 <main id="main-mp">
     <img src="Pictures/cicii.jpg" alt="Main_page_image" width="200%"><!--zde bude jinačí fotka-->
     
@@ -65,12 +66,12 @@
 <div class="container">
     <ul class="footer-menu">
         <li class="footer-item">
-            <a href="About_us.html">
+            <a href="HTML/About_us.html">
                 About us
             </a>
         </li>
         <li class="footer-item">
-            <a href="HTML/About_app.html">
+            <a href="HTML/">
                 About app
             </a>
         </li>
@@ -93,7 +94,6 @@
 </div>
 <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
 <script src="JavaScript/To_top.js"></script>
-<script src="JavaScript/Header_scroll.js"></script>
 <script src="JavaScript/Log_in_button.js"></script>
 </footer>
 </body>

@@ -10,51 +10,53 @@
     <link rel="stylesheet" href="../CSS/Responsive.css">
 </head>
 <body>
-    <header>
-        <div id="nav-bar">                          
-            <div class="nav-bar-menu">
-                <a href="Main_page.html" class="logo">
-                    <img src="../Pictures/Logo.png" alt="logo" width="100" height="100">
-                </a>        
+<header class="site-header">
+    <div class="nav-bar">                          
+        <p class="logo-area">
+            <a href="../index.html">
+                <img src="../Pictures/Logoo.png" alt="logo" width="264" height="90">
+            </a>   
+        </p>
+        <div class="nav-bar-menu">     
             <ul class="menu">
-                <li>
-                    <a href="Download.html" id="download-button">
+                <li class="menu-item">
+                    <a href="../HTML/Download.html" id="download-button">
                         <span>
                             Download
                         </span>
                     </a>
                 </li>   
-                <li>
-                    <a href="About_us.html">
+                <li class="menu-item">
+                    <a href="../HTML/About_us.html">
                         <span>
                             O nás
                         </span>
                     </a>
                 </li>
-                <li>
-                    <a href="About_app.html">
+                <li class="menu-item">
+                    <a href="../HTML/About_app.html">
                         <span>
                             O aplikaci
                         </span>
                     </a>
                 </li>
-                <li>
-                    <a href="Contact.html">
+                <li class="menu-item">
+                    <a href="../HTML/Contact.html">
                         <span>
                             Kontakty
                         </span>
                     </a>
-                </li>           
-            </ul>
-            <div id="loginStatus">
-                <a href="Log_in.html"  id="button" onclick="toggleLogin()">
-                    <span>
-                        Přihlásit se
-                    </span>
-                </a>
-            </div>        
+                </li>                       
+                <li id="loginStatus" class="menu-item">
+                    <a href="../HTML/Log_in.html"  id="button" onclick="toggleLogin()">
+                        <span>
+                            Přihlásit se
+                        </span>
+                    </a>
+                </li>  
+            </ul>      
         </div>           
-    </div>    
+    </div>
 </header>
 <main id="main-su">   
     <form class="signup-form" action="#" method="post">

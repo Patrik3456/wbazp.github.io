@@ -15,75 +15,66 @@ body{
     font-weight: 400;
     font-style: normal;
 }
+.site-header{
+    color: #263238;
+    border-bottom: 1px solid #E7EBED;
+    height: 89px;
+    margin: 0 auto;
+    position: relative;
+    width: 95%;
+    overflow: visible;
+}
+.nav-bar{ 
+    padding: 0;
+    max-width: none;
+}
+.logo-area a {
+    border: none;
+    display: block;
+    height: 90px;
+    margin: 0 auto;
+    width: 165px;
 
-#nav-bar{ 
-    transition-duration: 500ms;
-    transition-timing-function: ease-in-out;
-    transition-property: all;
-}
-header{
-    position: fixed;
-    z-index: 1000;
-    width: 80%;
-    top: 0;
-}
-#nav-bar .logo {
-    margin: 20px 0 0 30px;
-    text-decoration: none;
 }
 .nav-bar-menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    float: right;
 }
-.nav-bar-menu .menu {
-    display: inline-block;
-}
-#download-button {
-    
+.logo-area{
+    float: left;
+    width: 100px;
+    margin-left: 50px;
 }
 #button{
-    margin: 0 40px 0 0;
-    text-decoration: none;
-    color: #002D59;
-    padding: 15px 31px;
-    background-color: transparent;
-    border: 2px solid #002D59;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 25px;
+    border: 1px solid #CFD8DC;
+    color: #546E7A;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 14px 20px 12px;
 }
-
-.menu > li{
-    cursor: pointer; 
-    text-decoration: none;
-    display: inline-block;
-    margin: 0;
-    line-height: 1;
+.site-header .nav-bar-menu a{
+    color: #546E7A;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
 }
-.menu > li > a{
-    color: #002D59;
-    text-decoration: none;
-    display: block;
-    padding: 10px 15px;
+.site-header .nav-bar-menu .menu-item a{
+    padding: 28px 20px;
+}
+.menu{
+    color: #000;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 70px;
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
+    padding: 10px 15px;
 }
-.scroll {
-    width: 80%;
-    border-bottom: 1px solid grey;
-    background-color: #ffffff;
-    position: fixed;
-    top: 0;
-    z-index: 1000; 
-}
-.scroll > .nav-bar-menu > .logo {
-    margin: 0 0 0 40px;
-}
-.scroll > .nav-bar-menu > #button{
-    margin: 0 50px 0 0;
-    padding: 14px 28px;
+.menu-item{
+    margin: 0 10px;
 }
 #main-mp{
     width: 80%;
@@ -296,7 +287,7 @@ form a {
 }
 
 /* Stylizace formuláře */
-#form {
+#forgorform {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -322,7 +313,7 @@ input[type="email"], input[type="text"] {
 }
 
 /* Stylizace tlačítek */
-button[type="button"], button[type="submit"] {
+#forgorform button{
     width: 100%;
     padding: 10px;
     margin-top: 20px;
