@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Úvodní strana</title>
+    <link rel="stylesheet" type="text/css" href="CSS/Style.css">
+    <link rel="stylesheet" href="CSS/Reset.css">
+    <link rel="stylesheet" href="CSS/Responsive.css">
+</head>
+<body>
+<header class="site-header">  
+    <div class="logo-area">
+        <a href="index.html" class="logo-area">
+            <img src="Pictures/Logoo.png" alt="logo" width="264" height="90">
+        </a>   
+    </div>
+    <nav class="menu-container">
+        <ul class="menu">  
+            <li class="menu-item">
+                <a href="HTML/Download.html" id="download-button">                        
+                    Download                        
+                </a>
+            </li>   
+            <li class="menu-item">
+                <a href="HTML/About_us.html">                        
+                    O nás                       
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="HTML/Contact.html">                        
+                    Kontakty                        
+                </a>
+            </li>                       
+            <li id="loginStatus" class="menu-item">
+                <a href="HTML/Log_in.html"  id="button" onclick="toggleLogin()">                        
+                    Přihlásit se                        
+                </a>
+            </li>
+        </ul>
+    </nav> 
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>                
+</header>
+<main class="main-content">
+    <div class="main-intro-header">
+        <figure class="intro-content">
+            <div class="intro-text">
+                <div class="page-header">
+                    Proč bys měl používat DefendEdge?
+                </div>
+                <p class="intro-paragraph">
+                    Naše aplikace nabízí jednoduchost, efektivitu a spolehlivost. S námi dosáhnete svých cílů rychleji a bezpečněji. Připojte se k naší komunitě a objevte nové možnosti s naší aplikací!
+                </p>
+            </div>
+        </figure>
+    </div>
+    <div class="main-container">
+        <div class="motto-wrap">
+            <div class="page-header-small">
+                
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="main-content-container">
+            <div class="main-about">
+                <div class="about-block">
+                    <div class="about-text">
+                        <h2 class="about-header">
+                            Kdo jsme
+                        </h2>
+                        <p>
+                            Jsme tým lidí s vášní pro inovace a technologii. Naše společnost vznikla s cílem poskytovat uživatelům jednoduché a efektivní nástroje. S důrazem na spolehlivost a bezpečnost jsme se spojili, abychom vytvořili aplikaci, která mění životy.
+                        </p>
+                    </div>
+                    <a href="/HTML/About_us.html" class="about-button">
+                        Zjisti více
+                    </a>
+                </div>
+                <img src="/Pictures/Aboutphoto.jpg" width="auto" height="auto" class="about-image">
+            </div>
+        </div>
+        <div class="main-content-container">
+            <div class="main-about-second">
+                <div class="about-block">
+                    <div class="about-text">
+                        <h2 class="about-header">
+                            Co děláme
+                        </h2>
+                        <p>
+                            Jsme tým lidí, kteří vytvořili tuto aplikaci pro lidi, kteří se nebojí nového, rychlejšího a přehlednějšího provedení, oproti starším aplikacím. S důrazem na spolehlivost a uživatelskou spokojenost se zaměřujeme na tvorbu nástrojů, které usnadňují každodenní život.
+                        </p>
+                    </div>
+                    <a href="/HTML/About_us.html" class="about-button">
+                        Zjisti více
+                    </a>
+                </div>
+                <img src="../Pictures/Aboutphoto2.jpg" width="auto" height="auto" class="about-image">
+            </div>
+        </div>
+    </div>
+</main>
+<div id="footer">
+    <div class="wrap">
+        <div class="footer-logo">
+            <a href="index.html">
+                <img src="Pictures/Logoo.png" alt="logo" width="264" height="90">
+            </a>
+        </div>
+        <div class="footer-menu">
+            <ul>
+                <li class="footer-item">
+                    <a href="HTML/About_us.html">
+                        About us
+                    </a>
+                </li>
+                <li class="footer-item">
+                    <a href="HTML/Contact_us.html">
+                        Contact us
+                    </a>
+                </li>
+                <li class="footer-item">
+                    <a href="HTML/Log_in.html">
+                        Log in
+                    </a>
+                </li>
+                <li class="footer-item">
+                    <a href="HTML/Sign_up.html">
+                        Ask for Access
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+<script src="JavaScript/To_top.js"></script>
+<script src="JavaScript/Log_in_button.js"></script>
+<script src="/JavaScript/Header.js"></script>
+</body>
+</html>

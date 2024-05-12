@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Forgot password/ID</title>
+
+<link rel="stylesheet" href="../CSS/Style.css">
+<link rel="stylesheet" href="../CSS/Reset.css">
+<link rel="stylesheet" href="../CSS/Responsive.css">
+</head>
+<body style="background-image: url(../Pictures/cicii.jpg); background-repeat: no-repeat; background-size: cover;" >
+<<header class="site-header">  
+    <div class="logo-area">
+        <a href="../index.html" class="logo-area">
+            <img src="../Pictures/Logoo.png" alt="logo" width="264" height="90">
+        </a>   
+    </div>
+    <nav class="menu-container">
+        <ul class="menu">  
+            <li class="menu-item">
+                <a href="../HTML/Download.html" id="download-button">                        
+                    Download                        
+                </a>
+            </li>   
+            <li class="menu-item">
+                <a href="../HTML/About_us.html">                        
+                    O nás                       
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="../HTML/Contact.html">                        
+                    Kontakty                        
+                </a>
+            </li>                       
+            <li id="loginStatus" class="menu-item">
+                <a href="../HTML/Log_in.html"  id="button" onclick="toggleLogin()">                        
+                    Přihlásit se                        
+                </a>
+            </li>
+        </ul>
+    </nav> 
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>                
+</header>
+<main class="forgor-main">
+    <div class="main-intro-header intro-subpage">
+        <div class="intro-content">
+            <div class="about-us-text">
+                <div class="page-header">
+                    Zapomenuté heslo/ID
+                </div>
+                <p>
+                    Zadejte svůj e-mail a my vám pošleme oveřovací kód pro změnu hesla.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="contact-form">
+        <form id="emailform">
+            <label for="emailInput" id="emaillabel">Email:</label>
+            <input type="email" id="emailinput" required>
+            <button type="submit" id="emailbutton" class="contact-button">Potvrdit E-mail</button>
+        </form>
+        
+        <form id="vercodeform" style="display: none;">
+            <label for="vercode" id="codelabel">Oveřovací kód:</label>
+            <input type="text" id="codeinput" required>
+            <button type="submit" id="codebutton" class="contact-button">Potvrdit ověřovací kód</button>
+        </form>
+
+        <form id="newpassword" style="display: none;">
+            <label for="newpassword">Nové heslo:</label>
+            <input type="password" id="password1" required>
+            <label for="newpassword">Potvrzení hesla:</label>
+            <input type="password" id="password2" required>
+            <button type="submit" class="contact-button"><a href="../HTML/Log_in.html">Potvrdit nové heslo</a></button>
+        </form>
+    </div>
+</main>
+<div id="footer" style="color: white;">
+    <div class="wrap">
+        <div class="footer-logo">
+            <a href="index.html">
+                <img src="../Pictures/Logoo.png" alt="logo" width="264" height="90">
+            </a>
+        </div>
+        <div class="footer-menu">
+            <ul>
+                <li class="footer-item">
+                    <a href="../HTML/About_us.html">
+                        O nás
+                    </a>
+                </li>
+                <li class="footer-item">
+                    <a href="../HTML/Contact.html">
+                        Kontakty
+                    </a>
+                </li>
+                <li class="footer-item">
+                    <a href="../HTML/Log_in.html">
+                        Přihlásit se
+                    </a>
+                </li>
+                <li class="footer-item">
+                    <a href="../HTML/Sign_up.html">
+                        Požádat o přístup
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="../JavaScript/Forgot_form.js"></script>
+<script src="../JavaScript/Log_in_button.js"></script>
+<script src="../JavaScript/Mail.js"></script>
+</body>
+</html>
